@@ -4,5 +4,5 @@
 
 # 使用说明
 
-无需安装，直接运行StartWhat.exe
+无需安装，直接运行StartWeChat.exe
 如果提示安装FrameWork，请访问[ https://dotnet.microsoft.com/en-us/download/visual-studio-sdks ](https://dotnet.microsoft.com/en-us/download/visual-studio-sdks)下载 .NET 5.0 进行安装后再运行程序
