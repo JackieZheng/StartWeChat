@@ -8,12 +8,13 @@
     <Nullable>enable</Nullable>
     <ApplicationIcon>wechat.ico</ApplicationIcon>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <DebugType>embedded</DebugType>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <Optimize>false</Optimize>
+    <Optimize>True</Optimize>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
 
