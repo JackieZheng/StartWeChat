@@ -2,6 +2,8 @@
 
 可以在电脑上启动多少微信
 
+![startWeChat.jpg](startWeChat.jpg)
+
 # 使用说明
 
 无需安装，直接运行StartWeChat.exe
