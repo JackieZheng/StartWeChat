@@ -19,8 +19,7 @@ namespace StartWeChat
         {
             InitializeComponent();
         }
-        //D:\Program Files(x86)\Tencent\WeChat\WeChat.exe
-        
+        //D:\Program Files(x86)\Tencent\WeChat\WeChat.exe        
 
         private void main_Load(object sender, EventArgs e)
         {
