@@ -19,9 +19,9 @@ namespace StartWeChat
         {
             InitializeComponent();
         }
-        //D:\Program Files(x86)\Tencent\WeChat\WeChat.exe        
 
-        private void main_Load(object sender, EventArgs e)
+
+        private void Main_Load(object sender, EventArgs e)
         {
             try
             {
@@ -37,8 +37,6 @@ namespace StartWeChat
                 {
                     tbPath.Text = Path.Combine(objResult.ToString(), softName);
                 }
-
-                
             }
             catch
             {
@@ -47,6 +45,10 @@ namespace StartWeChat
 
         }
 
+        /// <summary>
+        /// 关闭进程
+        /// </summary>
+        /// <param name="softName"></param>
         public static void CloseApp(string softName)
         {
             Process[] pProcess;
@@ -56,21 +58,24 @@ namespace StartWeChat
                 if (pProcess[i].ProcessName == softName)
                 {
                     pProcess[i].Kill();
-                    break;
                 }
             }
         }
 
         private void BtnStart_Click(object sender, EventArgs e)
         {
-            if (nud.Value > 0)
+            var weChatPath = tbPath.Text;
+            if (nud.Value > 0 && File.Exists(weChatPath))
             {
                 CloseApp("WeChat");
                 for (int i = 0; i < nud.Value; i++)
                 {
-                    Process.Start(tbPath.Text);
+                    Process.Start(weChatPath);
                 }
-
+                if (chbCloseSelf.Checked)
+                {
+                    this.Close();
+                }
             }
         }
     }
