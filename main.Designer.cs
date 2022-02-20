@@ -41,27 +41,31 @@ namespace StartWeChat
             // 
             // tbPath
             // 
+            this.tbPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbPath.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbPath.Location = new System.Drawing.Point(134, 61);
+            this.tbPath.Location = new System.Drawing.Point(138, 64);
             this.tbPath.Margin = new System.Windows.Forms.Padding(5);
             this.tbPath.Name = "tbPath";
-            this.tbPath.Size = new System.Drawing.Size(553, 30);
+            this.tbPath.Size = new System.Drawing.Size(500, 31);
             this.tbPath.TabIndex = 0;
             // 
             // softPathLb
             // 
             this.softPathLb.AutoSize = true;
-            this.softPathLb.Location = new System.Drawing.Point(46, 64);
+            this.softPathLb.Location = new System.Drawing.Point(42, 67);
             this.softPathLb.Name = "softPathLb";
-            this.softPathLb.Size = new System.Drawing.Size(82, 24);
+            this.softPathLb.Size = new System.Drawing.Size(88, 25);
             this.softPathLb.TabIndex = 1;
             this.softPathLb.Text = "微信路径";
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(220, 213);
+            this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnStart.Location = new System.Drawing.Point(190, 222);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(237, 48);
+            this.btnStart.Size = new System.Drawing.Size(267, 50);
             this.btnStart.TabIndex = 2;
             this.btnStart.Text = "启动";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -71,7 +75,7 @@ namespace StartWeChat
             // 
             this.nud.AutoSize = true;
             this.nud.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.nud.Location = new System.Drawing.Point(134, 122);
+            this.nud.Location = new System.Drawing.Point(138, 127);
             this.nud.Maximum = new decimal(new int[] {
             10,
             0,
@@ -83,7 +87,7 @@ namespace StartWeChat
             0,
             0});
             this.nud.Name = "nud";
-            this.nud.Size = new System.Drawing.Size(180, 30);
+            this.nud.Size = new System.Drawing.Size(164, 31);
             this.nud.TabIndex = 3;
             this.nud.Value = new decimal(new int[] {
             2,
@@ -94,9 +98,9 @@ namespace StartWeChat
             // nubLb
             // 
             this.nubLb.AutoSize = true;
-            this.nubLb.Location = new System.Drawing.Point(46, 124);
+            this.nubLb.Location = new System.Drawing.Point(42, 129);
             this.nubLb.Name = "nubLb";
-            this.nubLb.Size = new System.Drawing.Size(82, 24);
+            this.nubLb.Size = new System.Drawing.Size(88, 25);
             this.nubLb.TabIndex = 1;
             this.nubLb.Text = "启动个数";
             // 
@@ -106,18 +110,18 @@ namespace StartWeChat
             this.chbCloseSelf.Checked = true;
             this.chbCloseSelf.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chbCloseSelf.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.chbCloseSelf.Location = new System.Drawing.Point(230, 273);
+            this.chbCloseSelf.Location = new System.Drawing.Point(209, 284);
             this.chbCloseSelf.Name = "chbCloseSelf";
-            this.chbCloseSelf.Size = new System.Drawing.Size(216, 28);
+            this.chbCloseSelf.Size = new System.Drawing.Size(228, 29);
             this.chbCloseSelf.TabIndex = 4;
             this.chbCloseSelf.Text = "启动微信后关闭本窗口";
             this.chbCloseSelf.UseVisualStyleBackColor = true;
             // 
             // main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(704, 354);
+            this.ClientSize = new System.Drawing.Size(653, 369);
             this.Controls.Add(this.chbCloseSelf);
             this.Controls.Add(this.nud);
             this.Controls.Add(this.btnStart);
@@ -128,6 +132,7 @@ namespace StartWeChat
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(675, 425);
             this.Name = "main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StartWeChat";
